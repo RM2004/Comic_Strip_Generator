@@ -1,0 +1,79 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Strip Generator</title>
+    <link rel="stylesheet" href="rm.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Comic Strip Generator</a>
+        <div class="toggle-btn">
+            <i class='bx bx-moon toggle-icon'></i>
+        </div>
+    </header>
+    <div class="container">
+        <form id="comicForm">
+            <div class="row">
+                <div class="panel">
+                    <label for="panel1">Panel 1:</label>
+                    <textarea id="panel1" name="panel1" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel2">Panel 2:</label>
+                    <textarea id="panel2" name="panel2" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel3">Panel 3:</label>
+                    <textarea id="panel3" name="panel3" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel4">Panel 4:</label>
+                    <textarea id="panel4" name="panel4" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel5">Panel 5:</label>
+                    <textarea id="panel5" name="panel5" required></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="panel">
+                    <label for="panel6">Panel 6:</label>
+                    <textarea id="panel6" name="panel6" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel7">Panel 7:</label>
+                    <textarea id="panel7" name="panel7" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel8">Panel 8:</label>
+                    <textarea id="panel8" name="panel8" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel9">Panel 9:</label>
+                    <textarea id="panel9" name="panel9" required></textarea>
+                </div>
+                <div class="panel">
+                    <label for="panel10">Panel 10:</label>
+                    <textarea id="panel10" name="panel10" required></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Generate Comic</button>
+        </form>
+        <div id="loading" class="loading">
+            <p>Loading...</p>
+        </div>
+        <div id="comicDisplay" class="comic-display"></div>
+        
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script src="rm.js"></script>
+</body>
+</html>
